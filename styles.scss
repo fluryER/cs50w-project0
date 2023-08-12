@@ -1,0 +1,101 @@
+//No se ni como lo hice pero aquí está
+
+// Definición de variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Estilos generales
+body {
+  font-family: Arial, sans-serif;
+  background-color: beige;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+// Estilos de encabezado
+header {
+  background-color: #75a8db;
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+}
+
+// Estilos para la barra de navegación
+.navbar {
+  background-color: violet;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(93, 30, 209);
+  font-weight: bold;
+  font-size: 18px;
+
+  &:hover {
+    color: black;
+  }
+}
+
+// Estilos de contenido principal
+section.container {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    padding-left: 20px;
+    position: relative;
+
+    &:before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+// Estilo para limitar el ancho de las imágenes en el carrusel
+.carousel-inner {
+  img {
+    max-width: 30%;
+    height: auto;
+  }
+}
+
+// Estilos para el carrusel
+.carousel-image {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Estilos de pie de página
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
